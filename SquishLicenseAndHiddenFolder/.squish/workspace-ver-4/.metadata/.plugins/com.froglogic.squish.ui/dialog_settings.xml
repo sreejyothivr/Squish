@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="MappedAUTDirectory" value="/home/athul/squish-for-java-7.1.0/examples/java/calculator"/>
+	<section name="SquishNewTestSuiteWizardSettings">
+		<item key="SelectedLanguage" value="JavaScript"/>
+		<item key="LastSuiteDir" value="/home/athul"/>
+		<item key="SelectedToolkit" value="Java"/>
+		<item key="SelectedAut" value="Calculator.java"/>
+		<item key="SelectedAndroidPackage" value="&lt;None&gt;"/>
+		<list key="ConnectionTarget">
+		</list>
+	</section>
+	<section name="ServerSettingsDialogSettings">
+		<item key="lastSelectedPage" value="com.froglogic.squish.ui.serversettings.manageauts"/>
+	</section>
+</section>

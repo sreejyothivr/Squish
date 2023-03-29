@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objectdump wrapper="Qt">
+    <element type="*">
+        <screenshot exclude="yes"/>
+        <screenshotIfRoot exclude="no"/>
+        <transparentNodes exclude="yes"/>
+        <realname exclude="yes"/>
+        <symbolicname exclude="yes"/>
+
+        <identifyingProperties>
+            <property name="id"/>
+            <property name="objectName"/>
+            <property name="accessibleName"/>
+        </identifyingProperties>
+        <properties>
+            <property name="*"/>
+            <property name="acceptDrops" exclude="yes"/>
+            <property name="allColumnsShowFocus" exclude="yes"/>
+            <property name="autoExpandDelay" exclude="yes"/>
+            <property name="autoScroll" exclude="yes"/>
+            <property name="autoScrollMargin" exclude="yes"/>
+            <property name="contextMenuPolicy" exclude="yes"/>
+            <property name="defaultDropAction" exclude="yes"/>
+            <property name="dragDropMode" exclude="yes"/>
+            <property name="dragDropOverwriteMode" exclude="yes"/>
+            <property name="dragEnabled" exclude="yes"/>
+            <property name="expandsOnDoubleClick" exclude="yes"/>
+            <property name="height" exclude="yes"/>
+            <property name="itemsExpandable" exclude="yes"/>
+            <property name="maximumHeight" exclude="yes"/>
+            <property name="maximumWidth" exclude="yes"/>
+            <property name="minimumHeight" exclude="yes"/>
+            <property name="minimumWidth" exclude="yes"/>
+            <property name="modal" exclude="yes"/>
+            <property name="mouseTracking" exclude="yes"/>
+            <property name="selectionBehavior" exclude="yes"/>
+            <property name="selectionMode" exclude="yes"/>
+            <property name="tabKeyNavigation" exclude="yes"/>
+            <property name="updatesEnabled" exclude="yes"/>
+            <property name="width" exclude="yes"/>
+            <property name="visible" exclude="yes"/>
+            <property name="windowModified" exclude="yes"/>
+            <property name="x" exclude="yes"/>
+            <property name="y" exclude="yes"/>
+        </properties>
+    </element>
+    <element type="QObject">
+        <properties>
+            <property name="__*" exclude="yes"/>
+        </properties>
+    </element>
+</objectdump>

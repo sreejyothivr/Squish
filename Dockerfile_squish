@@ -1,0 +1,19 @@
+FROM ubuntu
+
+# Creating a new user and assigning roles
+RUN apt-get update
+RUN apt-get update && apt-get -y install sudo
+RUN adduser ubuntu
+RUN passwd -d ubuntu
+RUN usermod -a -G adm,cdrom,sudo,dip,plugdev ubuntu
+
+# Installing the Java dependency for squish
+USER ubuntu
+RUN sudo apt-get install default-jdk -y
+
+# Copying the required files
+COPY SquishInstalledFIles ./home/ubuntu/
+COPY SquishLicenseAndHiddenFolder ./home/ubuntu/
+
+#Copying the AUT and the testscripts to be executed
+COPY TestScript ./home/ubuntu/TestScript/

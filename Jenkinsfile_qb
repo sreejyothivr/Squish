@@ -1,0 +1,47 @@
+pipeline {
+    agent {
+        dockerfile {
+            filename 'Dockerfile_qb'
+            args '-v /dev/shm:/dev/shm'
+        }
+    }
+
+    parameters {
+        choice(name: 'TEST_SUITE', choices:['integration_test.xml'], description: 'Test Suite to be executed')
+        string(name: 'TargetURL', defaultValue: 'https://google.com', description: 'Target base url for test execution')
+        string(name: 'EmailRecipients', defaultValue: 'sandeep.darsan@qburst.com', description: 'Email Recipients for sharing the test report')
+        string(name: 'gridURL', defaultValue: 'http://65.0.130.84:4445', description: 'IP Address of selenium grid server')
+    }
+
+    stages {
+        stage('run integration test') {
+            steps {
+                sh 'cat /etc/os-release'
+                sh "mvn test -Dtestng.suitexml=${params.TEST_SUITE} -Dtest.url.base=${params.TargetURL} -Dtest.grid.url=${params.gridURL}"
+            }
+        }
+
+    }
+    post {
+        always {
+            publishHTML target: [
+                    allowMissing         : false,
+                    alwaysLinkToLastBuild: false,
+                    keepAll              : true,
+                    reportDir            : "${WORKSPACE}/target",
+                    reportFiles          : 'extent-report.html',
+                    reportName           : 'Test Execution Report'
+            ]
+            sh 'pwd'
+            sh 'ls'
+            emailext mimeType: 'text/html',
+                    body: '${FILE, path="' + "${WORKSPACE}" + '/target/html-email-report.html"}',
+                    subject: currentBuild.currentResult + " : " + env.JOB_NAME + " : " + env.BUILD_NUMBER,
+                    to: 'sandeep.darsan@qburst.com',
+                    attachmentsPattern: '**/extent-report.html',
+                    attachLog: true,
+                    compressLog: true
+        }
+
+    }
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<buildpath>
+	<buildpathentry kind="src" path=""/>
+	<buildpathentry kind="prj" path="/Squish Global Scripts"/>
+	<buildpathentry external="true" kind="lib" path="/home/athul/squish-for-java-7.1.0/scriptmodules/javascript"/>
+</buildpath>

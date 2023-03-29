@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <project>
+        <name>QBurst Test Automation Framework</name>
+    </project>
+    <test>
+        <execution>
+            <!--Test Execution triggers: LOCAL, JENKINS-->
+            <trigger>LOCAL</trigger>
+            <!--Test Execution modes: STANDALONE, GRID-->
+            <mode>STANDALONE</mode>
+            <environment>PROD</environment>
+            <browser>CHROME</browser>
+            <!--App Types: WEB, MOBILE, MOBILE-WEB, API-->
+            <app.type>WEB</app.type>
+            <platform.name></platform.name>
+            <appium.url></appium.url>
+            <appium.port></appium.port>
+            <appium.device></appium.device>
+        </execution>
+        <deviceConfigFile>devices.xml</deviceConfigFile>
+        <email flag="false">
+            <host.name>smtp.gmail.com</host.name>
+            <auth.id></auth.id>
+            <auth.pwd></auth.pwd>
+            <to.name></to.name>
+            <to.email></to.email>
+        </email>
+    </test>
+</configuration>

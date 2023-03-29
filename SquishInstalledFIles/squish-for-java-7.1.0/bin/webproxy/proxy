@@ -1,0 +1,12 @@
+#! /bin/sh
+
+_scriptDir="$(dirname "$0")"
+_appContainingFolder="$(cd "$_scriptDir"; pwd -P)"
+_absPythonBasePath="$_appContainingFolder/../../python"
+if [ -f "$_absPythonBasePath/bin/python" ]; then
+    LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$_absPythonBasePath/lib
+    export LD_LIBRARY_PATH
+    exec "$_absPythonBasePath/bin/python" "$_appContainingFolder/proxy.py" "$@"
+else
+    exec "$_appContainingFolder/proxy.py" "$@"
+fi

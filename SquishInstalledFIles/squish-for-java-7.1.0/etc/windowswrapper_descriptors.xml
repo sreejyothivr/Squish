@@ -1,0 +1,425 @@
+<objectdescriptors>
+<!-- Every object in the Windows wrapper gets 'type' and 'container' in the
+     real name -->
+<descriptor>
+    <type name="WinGUIObject"/>
+    <realidentifiers>
+        <property>type</property>
+        <object>container</object>
+    </realidentifiers>
+</descriptor>
+
+<!-- WindowsControl objects (things we cannot identify otherwise) get 'class',
+     which has a good chance of being remotely reasonable. It avoids high
+     occurrence counts -->
+<descriptor>
+    <type name="WindowsControl"/>
+    <realidentifiers>
+        <property>class</property>
+    </realidentifiers>
+</descriptor>
+
+<!-- Same for .NET WinForms controls -->
+<descriptor>
+    <type name="WindowsFormsControl"/>
+    <realidentifiers>
+        <property>class</property>
+        <property>name</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="WindowsFormsControl">
+        <constraint name="name"></constraint>
+    </type>
+    <realidentifiers>
+        <property>class</property>
+    </realidentifiers>
+</descriptor>
+
+<!-- Same for .NET WPF controls -->
+<descriptor>
+    <type name="WPFControl"/>
+    <realidentifiers>
+        <property>name</property>
+    </realidentifiers>
+</descriptor>
+
+<!-- Don't bother trying the name of WPF controls if it's empty. -->
+<descriptor>
+    <type name="WPFControl">
+        <constraint name="name"></constraint>
+    </type>
+    <realidentifiers>
+        <property>class</property>
+    </realidentifiers>
+</descriptor>
+
+<!-- 'AccessibleObject' is the generic fallback type of the MSAA and FoxPro
+     extensions. -->
+<descriptor>
+    <type name="AccessibleObject"/>
+    <realidentifiers>
+        <property>role</property>
+    </realidentifiers>
+</descriptor>
+
+<!-- AccessibleObject used in WindowsForms extensions. -->
+<descriptor>
+    <type name="WindowsFormsAccessibleObject"/>
+    <realidentifiers>
+        <property>name</property>
+        <property>role</property>
+    </realidentifiers>
+</descriptor>
+
+<!-- Use 'text' for a few GUI controls which have a user-visible text, like menu
+     items, buttons, list items etc. -->
+<descriptor>
+    <type name="Button"/>
+    <realidentifiers>
+        <property>text</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="Button">
+        <constraint name="text">System.Windows.Controls.Image</constraint>
+    </type>
+    <realidentifiers>
+        <property>name</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="ToggleButton"/>
+    <realidentifiers>
+        <property>text</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="RadioButton"/>
+    <realidentifiers>
+        <property>text</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="CheckBox"/>
+    <realidentifiers>
+        <property>text</property>
+    </realidentifiers>
+</descriptor>
+
+<!-- Expandable groupbox-like control, found in .NET WPF -->
+<descriptor>
+    <type name="Expander"/>
+    <realidentifiers>
+        <property>text</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="Label"/>
+    <realidentifiers>
+        <property>text</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="GroupBox"/>
+    <realidentifiers>
+        <property>text</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="Dialog"/>
+    <realidentifiers>
+        <property>text</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="MDIWindow"/>
+    <realidentifiers>
+        <property>text</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="MenuItem"/>
+    <realidentifiers>
+        <property>text</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="List"/>
+    <realidentifiers>
+        <property>name</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="ListItem"/>
+    <realidentifiers>
+        <property>text</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="ListView"/>
+    <realidentifiers>
+        <property>name</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="ListViewItem"/>
+    <realidentifiers>
+        <property>text</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="ComboBoxItem"/>
+    <realidentifiers>
+        <property>text</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="Tree"/>
+    <realidentifiers>
+        <property>name</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="TreeItem"/>
+    <realidentifiers>
+        <property>text</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="ToolbarItem"/>
+    <realidentifiers>
+        <property>text</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="ToolbarItem">
+        <constraint name="text"></constraint>
+    </type>
+    <realidentifiers>
+        <property>id</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="HeaderItem"/>
+    <realidentifiers>
+        <property>text</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="StatusBarItem"/>
+    <realidentifiers>
+        <property>text</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="TabItem"/>
+    <realidentifiers>
+        <property>text</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="Window"/>
+    <realidentifiers>
+        <property>text</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="Popup"/>
+    <realidentifiers>
+        <property>name</property>
+        <property>id</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="Table"/>
+    <realidentifiers>
+        <property>name</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="TableRow"/>
+    <realidentifiers>
+        <group>
+            <property>index</property>
+            <property>row</property>
+        </group>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="TableColumn"/>
+    <realidentifiers>
+        <group>
+            <property>text</property>
+            <property>column</property>
+        </group>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="TableCell"/>
+    <realidentifiers>
+        <property>row</property>
+        <property>column</property>
+    </realidentifiers>
+</descriptor>
+
+<!-- Use leftObject or aboveObject or container for a few GUI controls which commonly
+     have labels next to them; these properties are rather slow to resolve but
+     they make it possible to identify many controls which otherwise don't have
+     any useful identifying properties. -->
+<descriptor>
+    <type name="Edit"/>
+    <realidentifiers>
+        <group>
+            <object>leftObject</object>
+            <object>aboveObject</object>
+        </group>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="ComboBox"/>
+    <realidentifiers>
+        <group>
+            <object>leftObject</object>
+            <object>aboveObject</object>
+        </group>
+    </realidentifiers>
+</descriptor>
+
+<!-- This descriptor is only relevant when using the GRIT extension. Using the
+     internal GRIT id for controls provides a very stable way to identify
+     any GUI element. -->
+<descriptor>
+    <type name="GRITObject"/>
+    <realidentifiers>
+        <property>gritid</property>
+    </realidentifiers>
+</descriptor>
+
+<!-- Descriptors for object types which are exposed by the Infragistics
+     support of the Windows Forms extension. -->
+<descriptor>
+    <type name="GridRow"/>
+    <realidentifiers>
+        <property>index</property>
+        <property>band</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="GridCell"/>
+    <realidentifiers>
+        <property>text</property>
+        <property>row</property>
+        <property>column</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="GridControl"/>
+    <realidentifiers>
+        <property>name</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="WindowsControl">
+        <constraint name="class">MsoCommandBar</constraint>
+    </type>
+    <realidentifiers>
+        <property>text</property>
+    </realidentifiers>
+</descriptor>
+
+<!-- Descriptors for object types which are exposed by the Exontrol extension. -->
+<descriptor>
+  <type name="ExplorerTreeItem"/>
+  <realidentifiers>
+    <property>index</property>
+  </realidentifiers>
+</descriptor>
+
+<descriptor>
+  <type name="ExplorerTreeCell"/>
+  <realidentifiers>
+    <property>row</property>
+    <property>column</property>
+  </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="ScrollBar"/>
+    <realidentifiers>
+        <property>orientation</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="Splitter"/>
+    <realidentifiers>
+        <property>orientation</property>
+    </realidentifiers>
+</descriptor>
+
+<!-- Descriptor for Image objects which have the source property. -->
+<descriptor>
+    <type name="Image"/>
+    <realidentifiers>
+        <property>source</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="Image">
+        <constraint name="source"></constraint>
+    </type>
+    <realidentifiers>
+        <property exclude="yes">source</property>
+    </realidentifiers>
+</descriptor>
+
+<!-- UiAutomation controls -->
+<descriptor>
+    <type name="Pane"/>
+    <realidentifiers>
+        <property>text</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="TitleBar"/>
+    <realidentifiers>
+        <property>text</property>
+    </realidentifiers>
+</descriptor>
+
+</objectdescriptors>

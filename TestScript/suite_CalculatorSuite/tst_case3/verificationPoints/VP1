@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<VerificationPoint type="Screenshot" version="4">
+    <Description/>
+    <Verification object="javaSwingCalculator30JLabel" options="12" type="PNG">
+        iVBORw0KGgoAAAANSUhEUgAAAS8AAAAPCAMAAACC27loAAABXFBMVEUzMzMzMzQzOXEzOXYzOXc0N1o0N1s0PHo0Pnw0P301R4Y2OT03Nk04ODs5TXk6Nzo6X6A6YqQ7OTs8bbBAba5BS1hCNTRCNTVDUWlENTREU2pFNTVGUWBIerpMNjdMQTlRRj1Vi8hWjMhaNzRbNzRpUUNpgaBqU0RxOTNyOTN0jrB2OTN3OTN6PDSDxPGEaliExfGFRzWKtd2Ltt6Ncl6PbYmQb4uc3P2d3f2qxditx9mvbTuwbTy14/u18v+18/+6+P+8+f+++f/A+f/B+f/G5/vIi1XIjFbJmWfJm2nJ+v/Nn2rSpW7V8f7dtYndtove/f/h/f/l8PjmyaXm97zn8vnpzq3s9uzs/v/xw4LxxIP3///4///68+T68+X93Jv93Zz99ej9+Ov+////8rT/8rX/9LX/9Lb/+Lr/+bz/+b7/+cL/+cP/+sn//uz///f///j///n///7///8Zk6TZAAAACXBIWXMAAB2HAAAdhwGP5fFlAAAA9klEQVRYhWMoHgWkAIaBdsAQA6PhRRpgKAwzUeAVVXOFcPP91YWkjGMG1k2DGTBkm1oGxXqICQSAeEVRckrh7jwGyQPtrEELIPkxXZPTBUTn2bBZFCeoCEcMqJsGMwCHV5KPtCw4iHINmeyLUzW4vAbWUYMYAMMrU4eBkc8WzMvSZXYoztBmdxpgVw1eAE5fid6SgoEgBjB92RWnjKYv3ABSfqVpcjiD6DxrVvPieOXR8gsnYMgxswqN8xQXCdFhcSwuipRTDHfj0RutH3EBhoJgfXluGS3fTFB4Fef7qfJLGEUPtKsGLxht35MGRsOLNDAaXqQBAN61226vSkHqAAAAAElFTkSuQmCC
+        <Mask/>
+    </Verification>
+</VerificationPoint>

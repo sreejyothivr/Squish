@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tracelibConfiguration>
+    <!--
+      For squishrunner the option overwriteExistingFile is being set to false
+      so that each squishrunner process creates a new file with the given
+      base name and an added number. For squishrunner this is useful because
+      there are often multiple instances of it running at the same time and
+      they'd overwrite each others trace output file without that option set
+      to false.
+    -->
+    <!--
+    <process>
+        <name>_squishrunner</name>
+        <output type="file">
+            <option name="filename">trace_squishrunner.log</option>
+            <option name="relativeToUserHome">true</option>
+            <option name="overwriteExistingFile">false</option>
+        </output>
+        <serializer type="xml">
+            <option name="beautifiedOutput">yes</option>
+        </serializer>
+    </process>
+    -->
+    <!--
+    <process>
+        <name>_squishserver</name>
+        <output type="file">
+            <option name="filename">trace_squishserver.log</option>
+            <option name="relativeToUserHome">true</option>
+            <option name="overwriteExistingFile">false</option>
+        </output>
+        <serializer type="xml">
+            <option name="beautifiedOutput">yes</option>
+        </serializer>
+    </process>
+    -->
+    <!--
+    <process>
+        <name>_webhook</name>
+        <output type="file">
+            <option name="filename">trace_webhook.log</option>
+            <option name="relativeToUserHome">true</option>
+        </output>
+        <serializer type="xml">
+            <option name="beautifiedOutput">yes</option>
+        </serializer>
+    </process>
+    -->
+</tracelibConfiguration>

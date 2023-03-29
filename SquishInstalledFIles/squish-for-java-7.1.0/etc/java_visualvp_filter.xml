@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objectdump wrapper="Java">
+    <element type="*">
+        <screenshot exclude="yes"/>
+        <screenshotIfRoot exclude="no"/>
+        <transparentNodes exclude="yes"/>
+        <realname exclude="yes"/>
+        <symbolicname exclude="yes"/>
+
+        <properties>
+            <property name="*"/>
+            <property name="width" exclude="yes"/>
+            <property name="height" exclude="yes"/>
+            <property name="y" exclude="yes"/>
+            <property name="x" exclude="yes"/>
+            <property name="class" exclude="yes"/>
+        </properties>
+    </element>
+    <element type="java_awt_Component">
+        <identifyingProperties>
+            <property name="name"/>
+        </identifyingProperties>
+        <properties>
+            <property name="doublebuffered" exclude="yes"/>
+            <property name="focustraversalkeysenabled" exclude="yes"/>
+            <property name="focustraversable" exclude="yes"/>
+            <property name="fontset" exclude="yes"/>
+            <property name="ignorerepaint" exclude="yes"/>
+            <property name="maximumsizeset" exclude="yes"/>
+            <property name="minimumsizeset" exclude="yes"/>
+            <property name="preferredsizeset" exclude="yes"/>
+            <property name="valid" exclude="yes"/>
+        </properties>
+    </element>
+    <element type="java_awt_Container">
+        <properties>
+            <property name="componentcount" exclude="yes"/>
+            <property name="focuscycleroot" exclude="yes"/>
+            <property name="focustraversalpolicyprovider" exclude="yes"/>
+            <property name="focustraversalpolicyset" exclude="yes"/>
+            <property name="lightweight" exclude="yes"/>
+            <property name="validateroot" exclude="yes"/>
+        </properties>
+    </element>
+    <element type="java_awt_Window">
+        <properties>
+            <property name="alwaysontopsupported" exclude="yes"/>
+            <property name="locationbyplatform" exclude="yes"/>
+        </properties>
+    </element>
+    <element type="java_awt_Frame">
+        <properties>
+            <property name="resizable" exclude="yes"/>
+        </properties>
+    </element>
+    <element type="javax_swing_JComponent">
+        <identifyingProperties>
+            <property name="uiclassid"/>
+        </identifyingProperties>
+        <properties>
+            <property name="debuggraphicsoptions" exclude="yes"/>
+            <property name="inheritspopupmenu" exclude="yes"/>
+            <property name="managingfocus" exclude="yes"/>
+            <property name="optimizeddrawingenabled" exclude="yes"/>
+            <property name="paintingforprint" exclude="yes"/>
+            <property name="paintingtile" exclude="yes"/>
+            <property name="verifyinputwhenfocustarget" exclude="yes"/>
+        </properties>
+    </element>
+    <element type="javax_swing_JFrame">
+        <properties>
+            <property name="defaultcloseoperation" exclude="yes"/>
+        </properties>
+    </element>
+    <element type="javax_swing_JTable">
+        <properties>
+            <property name="autocreaterowsorter" exclude="yes"/>
+            <property name="autocreatecolumnsfrommodel" exclude="yes"/>
+            <property name="fillsviewportheight" exclude="yes"/>
+            <property name="scrollabletracksviewportheight" exclude="yes"/>
+            <property name="scrollabletracksviewportwidth" exclude="yes"/>
+            <property name="surrendersfocusonkeystroke" exclude="yes"/>
+        </properties>
+    </element>
+    <element type="javafx_scene_Node">
+        <identifyingProperties>
+            <property name="accessiblehelp"/>
+            <property name="accessibleroledescription"/>
+            <property name="accessibletext"/>
+            <property name="id"/>
+        </identifyingProperties>
+        <properties>
+            <property name="cache" exclude="yes"/>
+            <property name="disable" exclude="yes"/>
+            <property name="focustraversable" exclude="yes"/>
+            <property name="hover" exclude="yes"/>
+            <property name="layoutx" exclude="yes"/>
+            <property name="layouty" exclude="yes"/>
+            <property name="managed" exclude="yes"/>
+            <property name="maxheight" exclude="yes"/>
+            <property name="maxwidth" exclude="yes"/>
+            <property name="minheight" exclude="yes"/>
+            <property name="minwidth" exclude="yes"/>
+            <property name="mousetransparent" exclude="yes"/>
+            <property name="pickonbounds" exclude="yes"/>
+            <property name="prefheight" exclude="yes"/>
+            <property name="prefwidth" exclude="yes"/>
+            <property name="pressed" exclude="yes"/>
+        </properties>
+    </element>
+    <element type="javafx_scene_Parent">
+        <properties>
+            <property name="needslayout" exclude="yes"/>
+        </properties>
+    </element>
+    <element type="javafx_scene_Scene">
+        <properties>
+            <property name="depthbuffer" exclude="yes"/>
+        </properties>
+    </element>
+    <element type="javafx_scene_layout_Region">
+        <properties>
+            <property name="cacheshape" exclude="yes"/>
+        </properties>
+    </element>
+    <element type="javafx_stage_Stage">
+        <properties>
+            <property name="fullscreenexithint" exclude="yes"/>
+            <property name="iconified" exclude="yes"/>
+            <property name="maxheight" exclude="yes"/>
+            <property name="maxwidth" exclude="yes"/>
+            <property name="minheight" exclude="yes"/>
+            <property name="minwidth" exclude="yes"/>
+        </properties>
+    </element>
+
+    <element type="org_eclipse_swt_widgets_Widget">
+        <properties>
+            <property name="disposed" exclude="yes"/>
+            <property name="handle" exclude="yes"/>
+        </properties>
+    </element>
+
+    <element type="org_eclipse_swt_widgets_Control">
+        <properties>
+            <property name="reparentable" exclude="yes"/>
+        </properties>
+    </element>
+
+    <element type="org_eclipse_swt_widgets_Composite">
+        <properties>
+            <property name="embeddedHandle" exclude="yes"/>
+            <property name="layoutdeferred" exclude="yes"/>
+        </properties>
+    </element>
+
+    <element type="org_eclipse_swt_widgets_Shell">
+        <properties>
+            <property name="imeinputmode" exclude="yes"/>
+        </properties>
+    </element>
+</objectdump>

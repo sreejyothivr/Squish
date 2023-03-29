@@ -1,0 +1,10 @@
+{
+  "name": "com.froglogic.nmshelper.chrome",
+  "description": "Squish Web Assembly Hook Helper",
+  "path": "__NMS_HELPER_PATH__/nmshelper",
+  "type": "stdio",
+  "allowed_origins": [
+    "chrome-extension://mkfebldlkodkmhpdlgigfneaajboegdl/",
+    "chrome-extension://nahkmppkmfbfeokieflaiddiknhachce/"
+  ]
+}

@@ -1,0 +1,369 @@
+<objectdescriptors>
+
+    <descriptor>
+        <type name="*"/>
+        <realidentifiers>
+            <property>type</property>
+            <property>caption</property>
+            <!--property>windowCaption</property>
+            <property>windowType</property>
+            <property>windowName</property-->
+            <group>
+                <object>container</object>
+                <object>window</object>
+            </group>
+        </realidentifiers>
+    </descriptor>
+
+    <descriptor>
+        <type name="*">
+            <constraint name="isInnerClassType">true</constraint>
+        </type>
+        <realidentifiers>
+            <property>basetype</property>
+            <property>caption</property>
+            <!--property>windowCaption</property>
+            <property>windowType</property>
+            <property>windowName</property-->
+            <group>
+                <object>container</object>
+                <object>window</object>
+            </group>
+        </realidentifiers>
+    </descriptor>
+
+    <descriptor>
+        <type name="java_awt_Component"/>
+        <realidentifiers>
+            <property>visible</property>
+            <group>
+                <property>caption</property>
+                <object>leftWidget</object>
+                <object>aboveWidget</object>
+            </group>
+        </realidentifiers>
+    </descriptor>
+
+    <descriptor>
+        <type name="java_awt_Component">
+            <constraint name="caption"></constraint>
+        </type>
+        <realidentifiers>
+            <property>visible</property>
+            <group>
+                <object>leftWidget</object>
+                <object>aboveWidget</object>
+            </group>
+        </realidentifiers>
+    </descriptor>
+
+    <descriptor>
+        <type name="java_awt_Component">
+            <constraint name="hasName">true</constraint>
+        </type>
+        <realidentifiers>
+            <property>visible</property>
+            <property>name</property>
+            <group>
+                <property>caption</property>
+                <object>leftWidget</object>
+                <object>aboveWidget</object>
+            </group>
+        </realidentifiers>
+    </descriptor>
+
+    <descriptor>
+        <type name="javax_swing_JComponent"/>
+        <realidentifiers>
+            <group>
+                <property>caption</property>
+                <property>tooltiptext</property>
+                <object>leftWidget</object>
+                <object>aboveWidget</object>
+            </group>
+        </realidentifiers>
+    </descriptor>
+
+    <descriptor>
+        <type name="javax_swing_JComponent">
+            <constraint name="caption"></constraint>
+        </type>
+        <realidentifiers>
+            <group>
+                <property>tooltiptext</property>
+                <object>leftWidget</object>
+                <object>aboveWidget</object>
+            </group>
+        </realidentifiers>
+    </descriptor>
+
+    <descriptor>
+        <type name="com_froglogic_squish_awt_TableItemProxy"/>
+        <realidentifiers>
+            <property>row</property>
+            <property>column</property>
+        </realidentifiers>
+    </descriptor>
+
+    <descriptor>
+        <type name="com_froglogic_squish_swt_TableCell"/>
+        <realidentifiers>
+            <property>row</property>
+            <property>column</property>
+        </realidentifiers>
+    </descriptor>
+
+    <descriptor>
+        <type name="org_eclipse_swt_widgets_TableItem"/>
+        <realidentifiers>
+            <property>row</property>
+        </realidentifiers>
+    </descriptor>
+
+    <descriptor>
+        <type name="com_froglogic_squish_nattable_Cell"/>
+        <realidentifiers>
+            <property>row</property>
+            <property>column</property>
+        </realidentifiers>
+    </descriptor>
+
+    <descriptor>
+        <type name="com_froglogic_squish_nebula_Cell"/>
+        <realidentifiers>
+            <property>row</property>
+            <property>column</property>
+        </realidentifiers>
+    </descriptor>
+
+    <descriptor>
+        <type name="com_froglogic_squish_nebula_RowHeaderCell"/>
+        <realidentifiers>
+            <property>row</property>
+        </realidentifiers>
+    </descriptor>
+
+    <descriptor>
+        <type name="com_froglogic_squish_awt_TreeItemProxy"/>
+        <realidentifiers>
+            <group>
+                <object>parentitem</object>
+                <object>container</object>
+            </group>
+        </realidentifiers>
+    </descriptor>
+
+    <descriptor>
+        <type name="org_eclipse_swt_widgets_TreeItem"/>
+        <realidentifiers>
+            <group>
+                <object>parentitem</object>
+                <object>container</object>
+            </group>
+        </realidentifiers>
+    </descriptor>
+
+    <descriptor>
+        <type name="com_froglogic_squish_swt_TreeSubItem"/>
+        <realidentifiers>
+            <property>column</property>
+        </realidentifiers>
+    </descriptor>
+
+    <descriptor>
+        <type name="javax_swing_JMenuItem"/>
+        <realidentifiers>
+            <group>
+                <object>parentitem</object>
+                <object>container</object>
+            </group>
+        </realidentifiers>
+    </descriptor>
+
+    <descriptor>
+        <type name="org_eclipse_swt_widgets_MenuItem"/>
+        <realidentifiers>
+            <group>
+                <object>parentitem</object>
+                <object>container</object>
+            </group>
+        </realidentifiers>
+    </descriptor>
+
+    <descriptor>
+        <type name="org_eclipse_swt_widgets_Menu"/>
+        <realidentifiers>
+            <property>menuStyle</property>
+        </realidentifiers>
+    </descriptor>
+
+    <descriptor>
+        <type name="org_eclipse_swt_widgets_Control"/>
+        <realidentifiers>
+            <property>isvisible</property>
+            <group>
+                <property>caption</property>
+                <object>leftWidget</object>
+                <object>aboveWidget</object>
+            </group>
+        </realidentifiers>
+    </descriptor>
+
+    <descriptor>
+        <type name="org_eclipse_swt_widgets_Control">
+            <constraint name="caption"></constraint>
+        </type>
+        <realidentifiers>
+            <property>isvisible</property>
+            <group>
+                <object>leftWidget</object>
+                <object>aboveWidget</object>
+            </group>
+        </realidentifiers>
+    </descriptor>
+
+    <descriptor>
+        <type name="org_eclipse_swt_widgets_Button">
+            <constraint name="buttonType">SWT.ARROW</constraint>
+        </type>
+        <realidentifiers>
+            <property>arrowDirection</property>
+        </realidentifiers>
+    </descriptor>
+
+    <descriptor>
+        <type name="org_eclipse_swt_widgets_ToolBar"/>
+        <realidentifiers>
+            <property>firstItemText</property>
+        </realidentifiers>
+    </descriptor>
+
+    <descriptor>
+        <type name="org_eclipse_swt_custom_CTabFolder"/>
+        <realidentifiers>
+            <property>firstTabCaption</property>
+        </realidentifiers>
+    </descriptor>
+
+    <descriptor>
+        <type name="org_eclipse_swt_custom_CTabItem"/>
+        <realidentifiers>
+            <property>parent.visible</property>
+        </realidentifiers>
+    </descriptor>
+
+    <descriptor>
+        <type name="org_eclipse_draw2d_Figure">
+        </type>
+        <realidentifiers>
+            <property>visible</property>
+            <property>enabled</property>
+            <property>backgroundcolor</property>
+            <property>border</property>
+            <property>tooltip</property>
+            <property>cursor</property>
+            <group>
+                <object>parentitem</object>
+                <object>container</object>
+            </group>
+        </realidentifiers>
+    </descriptor>
+
+    <descriptor>
+        <type name="org_eclipse_jface_action_Action">
+        </type>
+        <realidentifiers>
+            <property>id</property>
+            <property>enabled</property>
+            <property>checked</property>
+        </realidentifiers>
+    </descriptor>
+
+    <descriptor>
+        <type name="org_eclipse_draw2d_Shape">
+        </type>
+        <realidentifiers>
+            <property>linewidth</property>
+        </realidentifiers>
+    </descriptor>
+
+    <descriptor>
+        <type name="org_eclipse_draw2d_Label">
+        </type>
+        <realidentifiers>
+            <property>text</property>
+        </realidentifiers>
+    </descriptor>
+
+    <descriptor>
+        <type name="org_eclipse_draw2d_LabeledContainer">
+        </type>
+        <realidentifiers>
+            <property>label</property>
+        </realidentifiers>
+    </descriptor>
+
+    <descriptor>
+        <type name="javafx_scene_Node"/>
+        <realidentifiers>
+            <group>
+                <property>styletype</property>
+                <property>type</property>
+            </group>
+            <property>id</property>
+            <property>visible</property>
+        </realidentifiers>
+    </descriptor>
+
+    <descriptor>
+        <type name="javafx_scene_Node">
+            <constraint name="isInnerClassType">true</constraint>
+        </type>
+        <realidentifiers>
+            <group>
+                <property>styletype</property>
+                <property>basetype</property>
+            </group>
+            <property>id</property>
+            <property>visible</property>
+        </realidentifiers>
+    </descriptor>
+
+    <descriptor>
+        <type name="javafx_scene_control_Control"/>
+        <realidentifiers>
+            <group>
+                <property>type</property>
+                <property>styletype</property>
+            </group>
+        </realidentifiers>
+    </descriptor>
+
+    <descriptor>
+        <type name="javafx_scene_control_Control">
+            <constraint name="isInnerClassType">true</constraint>
+        </type>
+        <realidentifiers>
+            <group>
+                <property>basetype</property>
+                <property>styletype</property>
+            </group>
+        </realidentifiers>
+    </descriptor>
+
+    <descriptor>
+        <type name="javafx_stage_Window"/>
+        <realidentifiers>
+            <property>visible</property>
+        </realidentifiers>
+    </descriptor>
+
+    <descriptor>
+        <type name="javafx_scene_control_TableCell"/>
+        <realidentifiers>
+            <property>row</property>
+            <property>column</property>
+        </realidentifiers>
+    </descriptor>
+
+</objectdescriptors>

@@ -1,0 +1,21 @@
+{
+  "page.name": "webpage",
+  "locators": [
+    {
+      "locator.name": "login.email",
+      "locator.attributes": {
+        "locator.type": "xpath",
+        "locator.value": "//label[text()='Email']/..//input",
+        "locator.strategy": "enabled"
+      }
+    },
+    {
+      "locator.name": "login.password",
+      "locator.attributes": {
+        "locator.type": "xpath",
+        "locator.value": "//label[text()='Email']/..//input",
+        "locator.strategy": "enabled"
+      }
+    }
+  ]
+}

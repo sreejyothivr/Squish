@@ -1,0 +1,228 @@
+<objectdescriptors>
+<!-- Every object in the Android wrapper gets 'type' and 'container' in the
+     real name -->
+<descriptor>
+    <type name="Control"/>
+    <realidentifiers>
+        <property>type</property>
+        <property>visible</property>
+        <object>container</object>
+    </realidentifiers>
+</descriptor>
+
+<!-- Android Control objects (things we cannot identify otherwise) get
+     the simple name of the object java class, which has a good chance
+     of being remotely reasonable. It avoids high occurrence counts -->
+<descriptor>
+    <type name="Control">
+        <constraint name="type">Control</constraint>
+    </type>
+    <realidentifiers>
+        <property>simpleName</property>
+        <property>type</property>
+        <property>visible</property>
+        <object>container</object>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="Panel"/>
+    <realidentifiers>
+        <property>simpleName</property>
+    </realidentifiers>
+</descriptor>
+
+<!-- Use View.contentDescription when set -->
+<descriptor>
+    <type name="View"/>
+    <realidentifiers>
+        <property>resourceName</property>
+        <property>description</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="View">
+        <constraint name="description"></constraint>
+    </type>
+    <realidentifiers>
+        <property>resourceName</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="View">
+        <constraint name="resourceName"></constraint>
+    </type>
+    <realidentifiers>
+        <property>description</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="View">
+        <constraint name="resourceName"></constraint>
+        <constraint name="description"></constraint>
+    </type>
+</descriptor>
+
+<!-- Use 'text' for a few GUI controls which have a user-visible text, like menu
+     items, buttons, list items etc. -->
+<descriptor>
+    <type name="ActionBar"/>
+    <realidentifiers>
+        <property>text</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="Button"/>
+    <realidentifiers>
+        <property>text</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="Text"/>
+    <realidentifiers>
+        <property>text</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="Spinner"/>
+    <realidentifiers>
+        <property>itemCount</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="TabHost"/>
+    <realidentifiers>
+        <property>text</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="TabBar"/>
+    <realidentifiers>
+        <property>tabCount</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="Toolbar"/>
+    <realidentifiers>
+        <property>text</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="Activity"/>
+    <realidentifiers>
+        <property>text</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="Dialog"/>
+    <realidentifiers>
+        <property>text</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="Dialog">
+        <constraint name="text"></constraint>
+    </type>
+</descriptor>
+
+<!-- Use leftObject or aboveObject or container for a few GUI controls which commonly
+     have labels next to them; these properties are rather slow to resolve but
+     they make it possible to identify many controls which otherwise don't have
+     any useful identifying properties. -->
+<descriptor>
+    <type name="Edit"/>
+    <realidentifiers>
+        <group>
+            <object>leftObject</object>
+            <object>aboveObject</object>
+        </group>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="ProgressBar"/>
+    <realidentifiers>
+        <group>
+            <object>leftObject</object>
+            <object>aboveObject</object>
+        </group>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="Pane"/>
+    <realidentifiers>
+        <property>text</property>
+    </realidentifiers>
+</descriptor>
+
+<!-- Use AccessibilityNode text/resourceName when set -->
+<descriptor>
+    <type name="AccessibilityNode"/>
+    <realidentifiers>
+        <object>container</object>
+        <property>simpleName</property>
+        <property>text</property>
+        <property>resourceName</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="AccessibilityNode">
+        <constraint name="text"></constraint>
+    </type>
+    <realidentifiers>
+        <object>container</object>
+        <property>simpleName</property>
+        <property>resourceName</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="AccessibilityNode">
+        <constraint name="resourceName"></constraint>
+    </type>
+    <realidentifiers>
+        <object>container</object>
+        <property>simpleName</property>
+        <property>text</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="AccessibilityNode">
+        <constraint name="resourceName"></constraint>
+        <constraint name="text"></constraint>
+    </type>
+    <realidentifiers>
+        <object>container</object>
+        <property>simpleName</property>
+        <property>description</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="AccessibilityNode">
+        <constraint name="resourceName"></constraint>
+        <constraint name="text"></constraint>
+        <constraint name="description"></constraint>
+    </type>
+    <realidentifiers>
+        <object>container</object>
+        <property>simpleName</property>
+    </realidentifiers>
+</descriptor>
+
+</objectdescriptors>

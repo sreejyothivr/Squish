@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objectdump wrapper="Android">
+    <element type="*">
+        <properties>
+            <property name="*"/>
+        </properties>
+        <screenshot exclude="yes"/>
+        <screenshotIfRoot exclude="no"/>
+        <transparentNodes exclude="no"/>
+        <realname exclude="yes"/>
+        <symbolicname exclude="yes"/>
+    </element>
+</objectdump>

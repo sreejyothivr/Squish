@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objectdump wrapper="Mac">
+
+    <element type="*">
+        <screenshot exclude="yes"/>
+        <screenshotIfRoot exclude="no"/>
+        <transparentNodes exclude="yes"/>
+        <realname exclude="yes"/>
+        <symbolicname exclude="yes"/>
+
+        <identifyingProperties>
+            <property name="tag"/>
+            <property name="accessibilityIdentifier"/>
+            <property name="accessibilityLabel"/>
+        </identifyingProperties>
+        <properties>
+            <property name="*"/>
+        </properties>
+    </element>
+
+</objectdump>

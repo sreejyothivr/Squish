@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objectdump wrapper="Tk">
+    <element type="*">
+        <screenshot exclude="yes"/>
+        <screenshotIfRoot exclude="no"/>
+        <transparentNodes exclude="yes"/>
+        <realname exclude="yes"/>
+        <symbolicname exclude="yes"/>
+
+        <properties>
+            <property name="*"/>
+            <property name="width" exclude="yes" />
+            <property name="height" exclude="yes" />
+        </properties>
+    </element>
+</objectdump>

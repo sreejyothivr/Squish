@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objectdump wrapper="Web">
+    <element type="*">
+        <screenshot exclude="yes"/>
+        <screenshotIfRoot exclude="no"/>
+        <transparentNodes exclude="yes"/>
+        <realname exclude="yes"/>
+        <symbolicname exclude="yes"/>
+
+        <identifyingProperties>
+            <property name="id"/>
+            <property name="tagName"/>
+        </identifyingProperties>
+        <properties>
+            <property name="*"/>
+            <property name="absRow" exclude="yes" />
+            <property name="defaultSelected" exclude="yes" />
+            <property name="domPath" exclude="yes" />
+            <property name="enabled" exclude="yes"/>
+            <property name="endValue" exclude="yes"/>
+            <property name="height" exclude="yes"/>
+            <property name="index" exclude="yes"/>
+            <property name="innerHTML" exclude="yes"/>
+            <property name="innerText" exclude="yes"/>
+            <property name="isLooping" exclude="yes"/>
+            <property name="minimum" exclude="yes"/>
+            <property name="maximum" exclude="yes"/>
+            <property name="numChildren" exclude="yes"/>
+            <property name="qxChildrenLength" exclude="yes"/>
+            <property name="qxName" exclude="yes"/>
+            <property name="realType" exclude="yes"/>
+            <property name="showText" exclude="yes"/>
+            <property name="simplifiedInnerText" exclude="yes"/>
+            <property name="styleDisplay" exclude="yes"/>
+            <property name="startValue" exclude="yes"/>
+            <property name="step" exclude="yes"/>
+            <property name="type" exclude="yes"/>
+            <property name="visible" exclude="yes"/>
+            <property name="width" exclude="yes"/>
+            <property name="x" exclude="yes"/>
+            <property name="y" exclude="yes"/>
+        </properties>
+    </element>
+</objectdump>

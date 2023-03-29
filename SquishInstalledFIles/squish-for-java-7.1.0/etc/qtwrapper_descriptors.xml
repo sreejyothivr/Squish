@@ -1,0 +1,499 @@
+<objectdescriptors>
+<descriptor>
+    <type name="*"/>
+    <realidentifiers>
+        <group>
+            <property>name</property>
+            <property>caption</property>
+            <property>windowTitle</property>
+        </group>
+        <property>type</property>
+        <property>unnamed</property>
+        <property>visible</property>
+        <group>
+            <object>buddy</object>
+            <object>parentWidget</object>
+            <object>container</object>
+            <object>window</object>
+        </group>
+        <property>rowIndex</property>
+        <property>columnIndex</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="QWindow"/>
+    <realidentifiers>
+        <group>
+            <property>name</property>
+            <property>title</property>
+        </group>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="QWidget">
+        <constraint name="hasUniqueProperty">false</constraint>
+    </type>
+    <realidentifiers>
+        <object>leftWidget</object>
+        <object>aboveWidget</object>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="TabItem"/>
+    <realidentifiers>
+        <property>text</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="Icon"/>
+    <realidentifiers>
+        <property>text</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="QButton"/>
+    <realidentifiers>
+        <group>
+            <property>name</property>
+            <property>text</property>
+        </group>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="QAbstractButton"/>
+    <realidentifiers>
+        <group>
+            <property>name</property>
+            <property>text</property>
+        </group>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="QLabel"/>
+    <realidentifiers>
+        <group>
+            <property>name</property>
+            <property>text</property>
+        </group>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="QGroupBox"/>
+    <realidentifiers>
+        <group>
+            <property>name</property>
+            <property>title</property>
+        </group>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="QPopupMenu"/>
+    <realidentifiers>
+        <group>
+            <property>name</property>
+            <property>title</property>
+        </group>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="QToolBox"/>
+    <realidentifiers>
+        <group>
+            <property>name</property>
+            <property>text</property>
+        </group>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="QToolBoxButton"/>
+    <realidentifiers>
+        <group>
+            <property>text</property>
+        </group>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="QMenu"/>
+    <realidentifiers>
+        <group>
+            <property>name</property>
+            <property>title</property>
+        </group>
+    </realidentifiers>
+</descriptor>
+
+<!-- Qt 3 -->
+<descriptor>
+    <type name="QListBoxItem"/>
+    <realidentifiers>
+        <property>text</property>
+    </realidentifiers>
+</descriptor>
+
+<!-- Qt 3 -->
+<descriptor>
+    <type name="QListViewItem"/>
+    <realidentifiers>
+        <property>text0</property>
+        <property>text1</property>
+        <property>text2</property>
+        <property>text3</property>
+        <property>text4</property>
+        <property>text5</property>
+        <property>text6</property>
+        <property>text7</property>
+        <property>text8</property>
+        <property>text9</property>
+    </realidentifiers>
+</descriptor>
+
+<!-- Qt 3 -->
+<descriptor>
+    <type name="QTableItem"/>
+    <realidentifiers>
+        <property>row</property>
+        <property>col</property>
+    </realidentifiers>
+</descriptor>
+
+<!-- Qt 3 -->
+<descriptor>
+    <type name="QMenuItem"/>
+    <realidentifiers>
+        <property>text</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="QGraphicsItem"/>
+    <realidentifiers>
+        <property>movable</property>
+        <property>selectable</property>
+        <property>focusable</property>
+        <property>visible</property>
+        <property>enabled</property>
+        <property>acceptDrops</property>
+        <property>lineWidth</property>
+        <property>lineColor</property>
+        <property>fillColor</property>
+        <property>toolTip</property>
+        <property>data</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <!-- An item identified by the "QGraphicsItem" fallback type
+         must be a custom item. Identify the class with its
+         type() offset from QGraphicsItem::UserType via the
+         fake "userType" property. -->
+    <type name="QGraphicsItem">
+        <constraint name="type">QGraphicsItem</constraint>
+    </type>
+    <realidentifiers>
+        <property>movable</property>
+        <property>selectable</property>
+        <property>focusable</property>
+        <property>visible</property>
+        <property>enabled</property>
+        <property>acceptDrops</property>
+        <property>lineWidth</property>
+        <property>lineColor</property>
+        <property>fillColor</property>
+        <property>toolTip</property>
+        <property>data</property>
+        <property>userType</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="QGraphicsObject"/>
+    <realidentifiers>
+        <property>objectName</property>
+        <property>movable</property>
+        <property>selectable</property>
+        <property>focusable</property>
+        <property>visible</property>
+        <property>enabled</property>
+        <property>acceptDrops</property>
+        <property>toolTip</property>
+        <property>data</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="QGraphicsWidget"/>
+    <realidentifiers>
+        <property>movable</property>
+        <property>selectable</property>
+        <property>focusable</property>
+        <property>visible</property>
+        <property>enabled</property>
+        <property>acceptDrops</property>
+        <property>toolTip</property>
+        <property>data</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="QGraphicsTextItem"/>
+    <realidentifiers>
+        <property>movable</property>
+        <property>selectable</property>
+        <property>focusable</property>
+        <property>visible</property>
+        <property>enabled</property>
+        <property>acceptDrops</property>
+        <property>toolTip</property>
+        <property>data</property>
+        <property>editable</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="QGraphicsTextItem">
+        <constraint name='editable'>no</constraint>
+    </type>
+    <realidentifiers>
+        <property>movable</property>
+        <property>selectable</property>
+        <property>focusable</property>
+        <property>visible</property>
+        <property>enabled</property>
+        <property>acceptDrops</property>
+        <property>toolTip</property>
+        <property>data</property>
+        <property>editable</property>
+        <property>text</property>
+</realidentifiers>
+    <symbolicidentifiers>
+            <property>text</property>
+        </symbolicidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="QModelIndex">
+        <constraint name="viewType">QListView</constraint>
+    </type>
+    <realidentifiers>
+        <property>text</property>
+        <property exclude="yes">column</property>
+        <property exclude="yes">row</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="QModelIndex">
+        <constraint name="viewType">QTableView</constraint>
+    </type>
+    <realidentifiers>
+        <property>column</property>
+        <property>row</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="QModelIndex">
+        <constraint name="viewType">QTreeView</constraint>
+    </type>
+    <realidentifiers>
+        <property>column</property>
+        <property>text</property>
+        <property exclude="yes">row</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="QModelIndex"/>
+    <realidentifiers>
+        <property>column</property>
+        <property>text</property>
+        <property exclude="yes">row</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="QHeaderView"/>
+    <realidentifiers>
+        <property>orientation</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="HeaderViewItem"/>
+    <realidentifiers>
+        <property>text</property>
+        <property exclude="yes">row</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="TreeWidgetItem"/>
+    <realidentifiers>
+        <property>text</property>
+        <property>column</property>
+        <property exclude="yes">row</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="QGraphicsSimpleTextItem"/>
+    <realidentifiers>
+        <property>text</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="MenuItem"/>
+    <realidentifiers>
+        <property>enabled</property>
+        <property>text</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="QAction"/>
+    <realidentifiers>
+        <group>
+            <property>name</property>
+            <property>text</property>
+        </group>
+    </realidentifiers>
+</descriptor>
+
+<!-- Qt 3 support -->
+<descriptor>
+    <type name="Q3ListViewItem"/>
+    <realidentifiers>
+        <property>text0</property>
+        <property>text1</property>
+        <property>text2</property>
+        <property>text3</property>
+        <property>text4</property>
+        <property>text5</property>
+        <property>text6</property>
+        <property>text7</property>
+        <property>text8</property>
+        <property>text9</property>
+    </realidentifiers>
+</descriptor>
+<descriptor>
+    <type name="Q3ListBoxItem"/>
+    <realidentifiers>
+        <property>text</property>
+    </realidentifiers>
+</descriptor>
+<descriptor>
+    <type name="Q3TableItem"/>
+    <realidentifiers>
+        <property>row</property>
+        <property>col</property>
+    </realidentifiers>
+</descriptor>
+
+<!-- Declarative UI (as of Qt 4.7) -->
+<descriptor>
+    <type name="QDeclarativeItem"/>
+    <realidentifiers>
+        <group>
+            <property>objectName</property>
+            <property>id</property>
+        </group>
+        <!-- Drop properties inherited from QGraphicsItem. These will
+             go away once QDeclarative is based on QML Scene Graph -->
+        <property exclude="yes">name</property>
+        <property exclude="yes">movable</property>
+        <property exclude="yes">selectable</property>
+        <property exclude="yes">focusable</property>
+        <property exclude="yes">acceptDrops</property>
+        <property exclude="yes">editable</property>
+        <property>clip</property>
+        <property>smooth</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="QQuickItem"/>
+    <realidentifiers>
+        <group>
+            <property>objectName</property>
+            <property>id</property>
+        </group>
+        <property exclude="yes">name</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="Text"/>
+    <realidentifiers>
+        <group>
+            <property>objectName</property>
+            <property>text</property>
+        </group>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="Image"/>
+    <realidentifiers>
+        <property>source</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="BorderImage"/>
+    <realidentifiers>
+        <property>source</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="TextInput"/>
+    <realidentifiers>
+        <property>backgroundcolor</property>
+        <property>echoMode</property>
+        <property>passwordCharacter</property>
+    </realidentifiers>
+</descriptor>
+
+<descriptor>
+    <type name="Rectangle"/>
+    <realidentifiers>
+        <property>color</property>
+    </realidentifiers>
+</descriptor>
+
+<!-- Qt3D -->
+<descriptor>
+    <type name="Qt3DCore::QNode"/>
+    <realidentifiers>
+        <group>
+            <property>objectName</property>
+            <property>id</property>
+        </group>
+        <property exclude="yes">name</property>
+    </realidentifiers>
+</descriptor>
+
+<!-- Qt3D Studio -->
+<descriptor>
+    <type name="Q3DSGraphObject"/>
+    <realidentifiers>
+        <group>
+            <property>id</property>
+            <property>name</property>
+        </group>
+    </realidentifiers>
+</descriptor>
+</objectdescriptors>

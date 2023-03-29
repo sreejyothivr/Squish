@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objectdump wrapper="Android">
+    <element type="*">
+        <screenshot exclude="yes"/>
+        <screenshotIfRoot exclude="no"/>
+        <transparentNodes exclude="yes"/>
+        <realname exclude="yes"/>
+        <symbolicname exclude="yes"/>
+
+        <identifyingProperties>
+            <property name="resourceName"/>
+            <property name="class"/>
+        </identifyingProperties>
+        <properties>
+            <property name="*"/>
+            <property name="width" exclude="yes"/>
+            <property name="height" exclude="yes"/>
+            <property name="y" exclude="yes"/>
+            <property name="x" exclude="yes"/>
+            <property name="screenX" exclude="yes"/>
+            <property name="screenY" exclude="yes"/>
+            <property name="simpleName" exclude="yes"/>
+            <property name="type" exclude="yes"/>
+        </properties>
+    </element>
+</objectdump>

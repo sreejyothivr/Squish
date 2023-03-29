@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Automation Core Framework - Integration Test Suite" parallel="tests">
+    <listeners>
+        <listener class-name="com.qburst.testing.automationcore.testng.listners.TestListner"/>
+    </listeners>
+
+    <!--appType values: web, mobile.native, mobile.web, api-->
+    <parameter name="appType" value="web"/>
+    <!--appType values: Android, iOS-->
+<!--    <parameter name="platformName" value="Android"/>-->
+
+    <test name="Chrome Browser Test" enabled="true">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.qburst.testing.automationcore.testng.BrowserTest">
+                <methods>
+                    <include name="vefifyBrowser"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Firefox Browser Test" enabled="true">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="com.qburst.testing.automationcore.testng.BrowserTest">
+                <methods>
+                    <include name="vefifyBrowser"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
+

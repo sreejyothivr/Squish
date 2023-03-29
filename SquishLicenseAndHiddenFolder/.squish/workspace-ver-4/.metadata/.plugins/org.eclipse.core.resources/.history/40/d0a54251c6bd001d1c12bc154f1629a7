@@ -1,0 +1,6 @@
+AUT=Calculator.java
+HOOK_SUB_PROCESSES=true
+LANGUAGE=JavaScript
+OBJECTMAPSTYLE=script
+VERSION=3
+WRAPPERS=Java

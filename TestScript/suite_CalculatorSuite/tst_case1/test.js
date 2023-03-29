@@ -1,0 +1,10 @@
+import * as names from 'names.js';
+
+function main() {
+    startApplication("Calculator.jar");
+    clickButton(waitForObject(names.javaSwingCalculator1JButton));
+    clickButton(waitForObject(names.javaSwingCalculatorJButton));
+    clickButton(waitForObject(names.javaSwingCalculator1JButton));
+    clickButton(waitForObject(names.javaSwingCalculatorJButton_2));
+    test.compare(waitForObjectExists(names.javaSwingCalculator20JLabel).text, "2.0");
+}

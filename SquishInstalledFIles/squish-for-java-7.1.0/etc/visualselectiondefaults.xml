@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<selectiondefaults>
+
+    <check type="content">
+
+        <!-- Android -->
+        <widgetType name="AndroidGUIObject">
+            <property name="class"/>
+            <property name="text"/>
+            <property name="resourceName"/>
+        </widgetType>
+
+        <widgetType name="Progressbar">
+            <property name="value"/>
+        </widgetType>
+
+        <widgetType name="CheckedText">
+            <property name="checked"/>
+        </widgetType>
+
+        <widgetType name="CheckBox">
+            <property name="checked"/>
+        </widgetType>
+
+        <widgetType name="RadioButton">
+            <property name="checked"/>
+        </widgetType>
+
+        <widgetType name="SwitchButton">
+            <property name="checked"/>
+        </widgetType>
+
+        <widgetType name="ToggleButton">
+            <property name="checked"/>
+        </widgetType>
+
+        <!-- Java -->
+        <widgetType name="java_lang_Object">
+            <property name="text"/>
+            <property name="title"/>
+        </widgetType>
+
+        <widgetType name="java_awt_Component">
+            <property name="name"/>
+        </widgetType>
+
+        <widgetType name="javafx_scene_Node">
+            <property name="id"/>
+        </widgetType>
+
+        <!-- Mac and iOS -->
+        <widgetType name="NSObject">
+            <property name="title"/>
+        </widgetType>
+
+        <widgetType name="NSNumber">
+            <property name="stringValue"/>
+        </widgetType>
+        <widgetType name="NSString">
+            <property name="stringValue"/>
+        </widgetType>
+        <widgetType name="NSAttributedString">
+            <property name="stringValue"/>
+        </widgetType>
+
+        <!-- Mac -->
+        <widgetType name="NSWindow">
+            <property name="accessibilityLabel"/>
+        </widgetType>
+        <widgetType name="NSView">
+            <property name="accessibilityLabel"/>
+        </widgetType>
+        <widgetType name="NSTabViewItem">
+            <property name="label"/>
+        </widgetType>
+        <widgetType name="NSButton">
+            <property name="stringValue"/>
+        </widgetType>
+        <widgetType name="NSTextField">
+            <property name="stringValue"/>
+        </widgetType>
+
+        <!-- iOS -->
+        <widgetType name="UIView">
+            <property name="accessibilityIdentifier"/>
+            <property name="accessibilityLabel"/>
+        </widgetType>
+        <widgetType name="UILabel">
+            <property name="text"/>
+        </widgetType>
+        <widgetType name="UISearchBar">
+            <property name="text"/>
+        </widgetType>
+        <widgetType name="UITableViewCell">
+            <property name="text"/>
+        </widgetType>
+        <widgetType name="UITextField">
+            <property name="text"/>
+        </widgetType>
+        <widgetType name="UITextView">
+            <property name="text"/>
+        </widgetType>
+
+        <!-- Qt -->
+        <widgetType name="QObject">
+            <property name="objectName"/>
+            <property name="id"/>
+            <property name="text"/>
+            <property name="enabled"/>
+            <property name="statusTip"/>
+            <property name="toolTip"/>
+            <property name="value"/>
+            <property name="whatsThis"/>
+        </widgetType>
+        <widgetType name="QAbstractButton">
+            <property name="checked"/>
+        </widgetType>
+        <widgetType name="QAbstractSlider">
+            <property name="value"/>
+        </widgetType>
+        <widgetType name="QMainWindow">
+            <property name="windowTitle"/>
+        </widgetType>
+        <widgetType name="QModelIndex">
+            <property name="text"/>
+        </widgetType>
+        <widgetType name="QTextEdit">
+            <property name="plainText"/>
+        </widgetType>
+
+        <!-- Tk -->
+        <widgetType name="Tk_Window">
+            <property name="getvalue" />
+            <property name="label" />
+            <property name="text" />
+            <property name="title" />
+            <property name="value" />
+        </widgetType>
+
+        <!-- Web -->
+        <widgetType name="HTML_Object">
+            <property name="checked" />
+            <property name="column" />
+            <property name="disabled" />
+            <property name="description" />
+            <property name="domClassName" />
+            <property name="fieldName" />
+            <property name="hasFocus" />
+            <property name="icon" />
+            <property name="iconUrl" />
+            <property name="id" />
+            <property name="isChecked" />
+            <property name="isEnabled" />
+            <property name="isExpanded" />
+            <property name="isSeparator" />
+            <property name="itemText" />
+            <property name="label" />
+            <property name="numColumns" />
+            <property name="numGroups" />
+            <property name="numItems" />
+            <property name="numOptions" />
+            <property name="numRows" />
+            <property name="open" />
+            <property name="qxCaption" />
+            <property name="qxChecked" />
+            <property name="qxClassName" />
+            <property name="qxLabel" />
+            <property name="qxSelected" />
+            <property name="rgbColor" />
+            <property name="row" />
+            <property name="selected" />
+            <property name="selectedIndex" />
+            <property name="selectedOption" />
+            <property name="selectedOptions" />
+            <property name="selectedValue" />
+            <property name="tagName" />
+            <property name="text" />
+            <property name="textContent"/>
+            <property name="title" />
+            <property name="tooltip" />
+            <property name="value" />
+        </widgetType>
+
+        <!-- Windows -->
+        <widgetType name="WinGUIObject">
+            <property name="checked"/>
+            <property name="enabled"/>
+            <property name="focused"/>
+            <property name="orientation"/>
+            <property name="selected"/>
+            <property name="text"/>
+            <property name="tooltip"/>
+        </widgetType>
+
+        <widgetType name="WPFControl">
+            <property name="id"/>
+            <property name="name"/>
+        </widgetType>
+
+        <!-- XView -->
+
+    </check>
+
+</selectiondefaults>

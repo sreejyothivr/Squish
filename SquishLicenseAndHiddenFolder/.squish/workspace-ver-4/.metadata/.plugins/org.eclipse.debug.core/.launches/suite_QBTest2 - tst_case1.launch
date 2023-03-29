@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.froglogic.squish.core.TestSuiteLaunchConfiguration">
+    <mapAttribute key="com.froglogic.squish.core.ATTR_RUNNER_CONFIG">
+        <mapEntry key="android.device" value=""/>
+        <mapEntry key="bdd.scenario_by_index" value="-1"/>
+        <mapEntry key="enable.video.capture" value="false"/>
+        <mapEntry key="server.host" value="localhost"/>
+        <mapEntry key="server.port" value="42163"/>
+        <mapEntry key="tags" value=""/>
+    </mapAttribute>
+    <stringAttribute key="com.froglogic.squish.core.ATTR_TESTSUITE_LOCATION" value="/suite_QBTest2/suite_QBTest2"/>
+    <listAttribute key="com.froglogic.squish.core.ATTR_TESTSUITE_TESTCASES">
+        <listEntry value="tst_case1"/>
+    </listAttribute>
+    <stringAttribute key="process_factory_id" value="com.froglogic.squish.core.SquishProcessFactory"/>
+</launchConfiguration>

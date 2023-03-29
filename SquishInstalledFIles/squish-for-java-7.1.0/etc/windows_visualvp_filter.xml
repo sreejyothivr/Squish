@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objectdump wrapper="Windows">
+    <element type="*">
+        <screenshot exclude="yes"/>
+        <screenshotIfRoot exclude="no"/>
+        <transparentNodes exclude="yes"/>
+        <realname exclude="yes"/>
+        <symbolicname exclude="yes"/>
+
+        <identifyingProperties>
+            <property name="class"/>
+            <property name="gritid"/>
+            <property name="id"/>
+            <property name="name"/>
+            <property name="role"/>
+        </identifyingProperties>
+        <properties>
+            <property name="checked"/>
+            <property name="columnCount"/>
+            <property name="enabled"/>
+            <property name="focused"/>
+            <property name="orientation"/>
+            <property name="selected"/>
+            <property name="text"/>
+            <property name="tooltip"/>
+        </properties>
+    </element>
+</objectdump>

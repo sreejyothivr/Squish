@@ -1,0 +1,10 @@
+import { RegularExpression, Wildcard } from 'objectmaphelper.js';
+
+export var javaSwingCalculatorCalculator = {"caption": "Java Swing Calculator", "type": "Calculator", "visible": true};
+export var javaSwingCalculator1JButton = {"caption": 1, "type": "javax.swing.JButton", "visible": true, "window": javaSwingCalculatorCalculator};
+export var javaSwingCalculatorJButton = {"caption": "+", "type": "javax.swing.JButton", "visible": true, "window": javaSwingCalculatorCalculator};
+export var javaSwingCalculatorJButton_2 = {"caption": "=", "type": "javax.swing.JButton", "visible": true, "window": javaSwingCalculatorCalculator};
+export var javaSwingCalculatorCJButton = {"caption": "C", "type": "javax.swing.JButton", "visible": true, "window": javaSwingCalculatorCalculator};
+export var javaSwingCalculator20JLabel = {"caption": "2.0", "name": "Display", "type": "javax.swing.JLabel", "visible": true, "window": javaSwingCalculatorCalculator};
+export var javaSwingCalculator2JButton = {"caption": 2, "type": "javax.swing.JButton", "visible": true, "window": javaSwingCalculatorCalculator};
+export var javaSwingCalculator30JLabel = {"caption": "3.0", "name": "Display", "type": "javax.swing.JLabel", "visible": true, "window": javaSwingCalculatorCalculator};

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SquishReport xmlns="http://www.froglogic.com/resources/schemas/xml3" version="3.5">
+    <test type="testsuite">
+        <prolog time="2023-03-14T15:51:14.998622+05:30">
+            <name><![CDATA[suite_CalculatorSuite]]></name>
+            <location>
+                <uri><![CDATA[file:/home/athul/suite_CalculatorSuite/]]></uri>
+            </location>
+        </prolog>
+    <test type="testcase">
+        <prolog time="2023-03-14T15:51:15.040+05:30">
+            <name>tst_case3</name>
+            <location>
+                <uri><![CDATA[x-testsuite:/tst_case3]]></uri>
+            </location>
+        </prolog>
+        <verification>
+            <location>
+                <uri><![CDATA[x-testcase:/test.js]]></uri>
+                <lineNo>9</lineNo>
+            </location>
+            <screenshotVerificationResult time="2023-03-14T15:51:18.707+05:30" type="PASS">
+                <objectLocation>
+                    <uri><![CDATA[x-testcase:/verificationPoints/VP1]]></uri>
+                    <objectName>javaSwingCalculator30JLabel</objectName>
+                </objectLocation>
+                <text>VP1: Screenshot comparison of 'javaSwingCalculator30JLabel' passed</text>
+                <detail>Screenshots are considered identical</detail>
+            </screenshotVerificationResult>
+        </verification>
+        <epilog time="2023-03-14T15:51:19.725+05:30"></epilog>
+    </test>
+
+        <epilog time="2023-03-14T15:51:21.835879+05:30"></epilog>
+    </test>
+</SquishReport>

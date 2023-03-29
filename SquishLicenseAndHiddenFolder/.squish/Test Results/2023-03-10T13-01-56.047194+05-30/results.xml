@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SquishReport xmlns="http://www.froglogic.com/resources/schemas/xml3" version="3.5">
+    <test type="testsuite">
+        <prolog time="2023-03-10T13:01:56.047194+05:30">
+            <name><![CDATA[suite_CalculatorSuite]]></name>
+            <location>
+                <uri><![CDATA[file:/home/athul/suite_CalculatorSuite/]]></uri>
+            </location>
+        </prolog>
+    <test type="testcase">
+        <prolog time="2023-03-10T13:01:56.071+05:30">
+            <name>tst_case1</name>
+            <location>
+                <uri><![CDATA[x-testsuite:/tst_case1]]></uri>
+            </location>
+        </prolog>
+        <verification>
+            <location>
+                <uri><![CDATA[x-testcase:/test.js]]></uri>
+                <lineNo>9</lineNo>
+            </location>
+            <scriptedVerificationResult time="2023-03-10T13:01:59.212+05:30" type="PASS">
+                <scriptedLocation>
+                    <uri><![CDATA[x-testcase:/test.js]]></uri>
+                    <lineNo>9</lineNo>
+                </scriptedLocation>
+                <text>Comparison</text>
+                <detail>'2.0' and '2.0' are equal</detail>
+            </scriptedVerificationResult>
+        </verification>
+        <epilog time="2023-03-10T13:01:59.212+05:30"></epilog>
+    </test>
+
+        <epilog time="2023-03-10T13:02:01.414933+05:30"></epilog>
+    </test>
+</SquishReport>

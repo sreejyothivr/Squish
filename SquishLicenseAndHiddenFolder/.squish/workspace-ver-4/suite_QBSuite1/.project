@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>suite_QBSuite1</name>
+	<comment></comment>
+	<projects>
+		<project>Squish Global Scripts</project>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.dltk.core.scriptbuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.froglogic.squish.core.SquishProjectBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>com.froglogic.squish.core.SquishNature</nature>
+		<nature>org.eclipse.dltk.javascript.core.nature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>suite_QBSuite1</name>
+			<type>2</type>
+			<location>/home/athul/suite_QBSuite1</location>
+		</link>
+		<link>
+			<name>suite_QBSuite1/envvars</name>
+			<type>1</type>
+			<location>/home/athul/suite_QBSuite1/envvars</location>
+		</link>
+		<link>
+			<name>suite_QBSuite1/objects.map</name>
+			<type>1</type>
+			<location>/home/athul/suite_QBSuite1/objects.map</location>
+		</link>
+	</linkedResources>
+</projectDescription>

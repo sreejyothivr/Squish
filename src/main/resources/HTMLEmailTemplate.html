@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML Email Base</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body style="margin: 0 auto;s
+            min-width: 400px;
+            max-width: 600px;
+            font-family: sans-serif;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #212529;
+            background-color: #fff;
+            padding: 50px 0;">
+<div style="background-color:#2e4053; text-align:center;">
+    <h3 style="margin: 0; padding: 0; color: #e5e7e9;"><!--PROJECTNAME--></h3>
+    <h5 style="margin: 0; padding: 0; color: #d0d3d4;">Test Execution Summary</h5>
+</div>
+<p style="margin: 0; padding: 0; padding-top: 20px;">Please find below the Automation Test Execution Summary for the test suite: <!--SUITENAME--></p>
+<table cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
+    <tbody>
+    <tr style="text-align:center; vertical-align:middle">
+        <td>
+            <h1><!--TOTALTEST--></h1>
+            <p>Total Test</p>
+        </td>
+        <td>
+            <h1><!--TOTALTESTCASES--></h1>
+            <p>Executions</p>
+        </td>
+        <td style="color: green;">
+            <h1><!--TOTALPASSTESTCASES--></h1>
+            <p>Pass</p>
+        </td>
+        <td style="color: red;">
+            <h1><!--TOTALFAILTESTCASES--></h1>
+            <p>Fail</p>
+        </td>
+        <td style="color: orange;">
+            <h1><!--TOTALSKIPTESTCASES--></h1>
+            <p>Skip</p>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<table border="1" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
+    <thead>
+    <tr bgcolor="#85929e">
+        <th>Module</th>
+        <th>Tests</th>
+        <th>Passed</th>
+        <th>Failed</th>
+        <th>Skipped</th>
+        <th>Status</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!--TABLECONTENT-->
+    </tbody>
+</table>
+</body>
+</html>

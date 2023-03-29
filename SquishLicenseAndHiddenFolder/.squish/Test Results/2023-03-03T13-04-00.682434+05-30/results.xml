@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SquishReport xmlns="http://www.froglogic.com/resources/schemas/xml3" version="3.5">
+    <test type="testsuite">
+        <prolog time="2023-03-03T13:04:00.682434+05:30">
+            <name><![CDATA[suite_QBTest2]]></name>
+            <location>
+                <uri><![CDATA[file:/home/athul/suite_QBTest2/]]></uri>
+            </location>
+        </prolog>
+    <test type="testcase">
+        <prolog time="2023-03-03T13:04:00.696+05:30">
+            <name>tst_case1</name>
+            <location>
+                <uri><![CDATA[x-testsuite:/tst_case1]]></uri>
+            </location>
+        </prolog>
+        <message time="2023-03-03T13:04:00.714+05:30" type="LOG">
+            <location>
+                <uri><![CDATA[x-testcase:/test.js]]></uri>
+                <lineNo>5</lineNo>
+            </location>
+            <text>Hello World</text>
+        </message>
+        <epilog time="2023-03-03T13:04:05.735+05:30"></epilog>
+    </test>
+
+        <epilog time="2023-03-03T13:04:07.932824+05:30"></epilog>
+    </test>
+</SquishReport>

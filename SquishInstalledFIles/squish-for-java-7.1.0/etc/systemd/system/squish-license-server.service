@@ -1,0 +1,12 @@
+[Unit]
+Description=Squish Floating License Server
+Documentation=https://doc.froglogic.com/squish/latest
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=exec
+ExecStart=@PREFIX@/bin/licenseserver --log-syslog
+
+[Install]
+WantedBy=multi-user.target

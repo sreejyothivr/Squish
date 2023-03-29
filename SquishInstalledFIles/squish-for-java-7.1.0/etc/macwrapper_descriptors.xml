@@ -1,0 +1,353 @@
+<objectdescriptors>
+
+    <descriptor>
+        <type name="*"/>
+        <realidentifiers>
+            <property>visible</property>
+            <property>type</property>
+            <property>toolTip</property>
+            <group> <!-- container objects, most specific first-->
+                <object>parentItem</object>
+                <object>tableView</object>
+                <object>window</object>
+            </group>
+        </realidentifiers>
+        <symbolicidentifiers>
+        </symbolicidentifiers>
+    </descriptor>
+
+    <!--************************************************************
+        Cocoa
+      ************************************************************-->
+    <descriptor>
+        <type name="NSObject"/>
+        <realidentifiers>
+            <group>
+                <property>title</property>
+                <property>label</property>
+            </group>
+        </realidentifiers>
+        <symbolicidentifiers>
+            <group>
+                <property>title</property>
+                <property>label</property>
+                <property>toolTip</property>
+            </group>
+        </symbolicidentifiers>
+    </descriptor>
+    <descriptor>
+        <type name="NSObject">
+            <constraint name='isCarbonObject'>1</constraint>
+        </type>
+        <realidentifiers/>
+        <symbolicidentifiers/>
+    </descriptor>
+    <descriptor> <!-- Don't use the title property for pop-up menus since
+                      their value is changed by user input (but use it for
+                      command pop-down menus). -->
+        <type name="NSObject">
+            <constraint name='isKindOfType_NSPopUpButton'>1</constraint>
+            <constraint name='pullsDown'>0</constraint>
+        </type>
+        <realidentifiers/>
+        <symbolicidentifiers/>
+    </descriptor>
+
+    <descriptor>
+        <type name="NSMenuItem">
+            <constraint name='isApplicationMenuItem'>1</constraint>
+        </type>
+        <realidentifiers>
+            <property>isApplicationMenuItem</property>
+        </realidentifiers>
+        <symbolicidentifiers/>
+    </descriptor>
+
+    <descriptor>
+        <type name="NSTextField"/>
+        <realidentifiers>
+            <property>editable</property>
+            <group>
+                <object>leftLabel</object>
+                <object>aboveLabel</object>
+            </group>
+        </realidentifiers>
+        <symbolicidentifiers>
+            <group>
+                <property>leftLabel.stringValue</property>
+                <property>aboveLabel.stringValue</property>
+            </group>
+        </symbolicidentifiers>
+    </descriptor>
+    <descriptor>
+        <type name="NSTextField">
+            <constraint name='editable'>0</constraint>
+        </type>
+        <realidentifiers>
+            <property>editable</property>
+            <property>stringValue</property>
+        </realidentifiers>
+        <symbolicidentifiers>
+            <property>stringValue</property>
+        </symbolicidentifiers>
+    </descriptor>
+
+    <descriptor>
+        <type name="NSPopUpButton"/>
+        <realidentifiers>
+            <group>
+                <object>leftLabel</object>
+                <object>aboveLabel</object>
+            </group>
+        </realidentifiers>
+        <symbolicidentifiers>
+            <group>
+                <property>leftLabel.stringValue</property>
+                <property>aboveLabel.stringValue</property>
+            </group>
+        </symbolicidentifiers>
+    </descriptor>
+
+    <descriptor>
+        <type name="NSScroller"/>
+        <realidentifiers>
+            <object>documentView</object>
+            <property>direction</property>
+        </realidentifiers>
+        <symbolicidentifiers>
+        </symbolicidentifiers>
+    </descriptor>
+
+    <descriptor>
+        <type name="NSScrollerPart"/>
+        <realidentifiers>
+            <property>partName</property>
+            <group> <!-- container objects, most specific first-->
+                <object>container</object>
+                <object>parentItem</object>
+                <object>tableView</object>
+                <object>window</object>
+            </group>
+        </realidentifiers>
+        <symbolicidentifiers>
+            <property>partName</property>
+        </symbolicidentifiers>
+    </descriptor>
+
+    <descriptor>
+        <type name="NSString"/>
+        <realidentifiers>
+            <property>stringValue</property>
+        </realidentifiers>
+        <symbolicidentifiers>
+            <property>stringValue</property>
+        </symbolicidentifiers>
+    </descriptor>
+
+    <descriptor>
+        <type name="NSAttributedString"/>
+        <realidentifiers>
+            <property>stringValue</property>
+        </realidentifiers>
+        <symbolicidentifiers>
+            <property>stringValue</property>
+        </symbolicidentifiers>
+    </descriptor>
+
+    <descriptor>
+        <type name="NSNumber"/>
+        <realidentifiers>
+            <property>stringValue</property>
+            <property>objCTypeWithoutQualifiers</property>
+        </realidentifiers>
+        <symbolicidentifiers>
+            <property>stringValue</property>
+        </symbolicidentifiers>
+    </descriptor>
+
+    <!--************************************************************
+        UIKit
+      ************************************************************-->
+    <descriptor>
+        <type name="UIView"/>
+        <realidentifiers>
+            <property>type</property>
+            <property>toolTip</property>
+            <group> <!-- container objects, most specific first-->
+                <object>parentItem</object>
+                <object>tableView</object>
+                <object>container</object>
+                <object>window</object>
+            </group>
+        </realidentifiers>
+        <symbolicidentifiers>
+        </symbolicidentifiers>
+    </descriptor>
+    <descriptor>
+        <type name="UIButton"/>
+        <realidentifiers>
+            <property>currentTitle</property>
+        </realidentifiers>
+        <symbolicidentifiers>
+            <property>currentTitle</property>
+        </symbolicidentifiers>
+    </descriptor>
+    <descriptor>
+        <type name="UILabel"/>
+        <realidentifiers>
+            <property>text</property>
+        </realidentifiers>
+        <symbolicidentifiers>
+            <property>text</property>
+        </symbolicidentifiers>
+    </descriptor>
+    <descriptor>
+        <type name="UITableViewCell"/>
+        <realidentifiers>
+            <property>text</property>
+        </realidentifiers>
+        <symbolicidentifiers>
+            <property>text</property>
+        </symbolicidentifiers>
+    </descriptor>
+    <descriptor>
+        <type name="UITextField"/>
+        <realidentifiers>
+            <group>
+                <property>placeholder</property>
+                <object>leftLabel</object>
+                <object>aboveLabel</object>
+            </group>
+        </realidentifiers>
+        <symbolicidentifiers>
+            <group>
+                <property>placeholder</property>
+                <property>leftLabel.text</property>
+                <property>aboveLabel.text</property>
+            </group>
+        </symbolicidentifiers>
+    </descriptor>
+    <descriptor>
+        <type name="UITextView"/>
+        <realidentifiers>
+            <group>
+                <object>leftLabel</object>
+                <object>aboveLabel</object>
+            </group>
+        </realidentifiers>
+        <symbolicidentifiers>
+            <group>
+                <property>leftLabel.text</property>
+                <property>aboveLabel.text</property>
+            </group>
+        </symbolicidentifiers>
+    </descriptor>
+
+    <!--************************************************************
+        AX AccessibilityElement
+      ************************************************************-->
+
+    <descriptor>
+        <type name="AccessibilityElement"/>
+        <realidentifiers>
+            <property>role</property>
+            <property>subrole</property>
+            <group>
+                <property>title</property>
+                <!--
+                    prefer .title over .value for titleUIElement not being an AXStaticText
+                -->
+                <property>titleUIElement.title</property>
+                <!--
+                    Use .value for label text assigned to an element that otherwise has no good identifying properties.
+                -->
+                <property>titleUIElement.value</property>
+            </group>
+        </realidentifiers>
+    </descriptor>
+
+    <descriptor>
+        <type name="AccessibilityButton"/>
+        <realidentifiers>
+            <property exclude="yes">role</property>
+        </realidentifiers>
+    </descriptor>
+
+    <descriptor>
+        <type name="AccessibilityCheckBox"/>
+        <realidentifiers>
+            <property exclude="yes">role</property>
+        </realidentifiers>
+    </descriptor>
+
+    <descriptor>
+        <type name="AccessibilityMenuItem"/>
+        <realidentifiers>
+            <property exclude="yes">role</property>
+        </realidentifiers>
+    </descriptor>
+
+    <descriptor>
+        <type name="AccessibilityRadioButton"/>
+        <realidentifiers>
+            <property exclude="yes">role</property>
+        </realidentifiers>
+    </descriptor>
+
+    <descriptor>
+        <type name="AccessibilityWindow"/>
+        <realidentifiers>
+            <property exclude="yes">role</property>
+        </realidentifiers>
+    </descriptor>
+
+    <descriptor>
+        <type name="AccessibilityElement">
+            <constraint name="role">AXHeading</constraint>
+        </type>
+        <realidentifiers>
+            <property>role</property>
+            <property>subrole</property>
+            <property>description</property>
+        </realidentifiers>
+    </descriptor>
+
+
+    <descriptor>
+        <type name="AccessibilityElement">
+            <constraint name="role">AXSlider</constraint>
+        </type>
+        <realidentifiers>
+            <property>role</property>
+            <property>subrole</property>
+            <property>orientation</property>
+        </realidentifiers>
+    </descriptor>
+
+    <descriptor>
+        <type name="AccessibilityElement">
+            <constraint name="role">AXStaticText</constraint>
+        </type>
+        <realidentifiers>
+            <property>role</property>
+            <property>subrole</property>
+            <property>value</property>
+        </realidentifiers>
+    </descriptor>
+
+    <descriptor>
+        <type name="AccessibilityElement">
+            <constraint name="role">AXTextField</constraint>
+        </type>
+        <realidentifiers>
+            <property>role</property>
+            <property>subrole</property>
+            <group>
+                <property>titleUIElement.value</property>
+                <property>placeholderValue</property>
+            </group>
+        </realidentifiers>
+    </descriptor>
+
+
+</objectdescriptors>

@@ -1,0 +1,52 @@
+# To execute this docker-compose yml file use `docker-compose -f docker-compose-grid4-ec2.yml up`
+# Add the `-d` flag at the end for detached execution
+# To stop the execution, hit Ctrl+C, and then `docker-compose -f docker-compose-grid4-ec2.yml down`
+version: '3'
+services:
+  selenium-hub:
+    image: selenium/hub
+    ports:
+      - "4445:4444"
+      - "4442:4442"
+      - "4443:4443"
+  chrome:
+    image: selenium/node-chrome
+    shm_size: 2gb
+    depends_on:
+      - selenium-hub
+    environment:
+      - SE_EVENT_BUS_HOST=selenium-hub
+      - SE_EVENT_BUS_PUBLISH_PORT=4442
+      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+      #- SE_NODE_MAX_SESSION=2
+    ports:
+      - "5900"
+      - "7900"
+
+  firefox:
+    image: selenium/node-firefox
+    shm_size: 2gb
+    depends_on:
+      - selenium-hub
+    environment:
+      - SE_EVENT_BUS_HOST=selenium-hub
+      - SE_EVENT_BUS_PUBLISH_PORT=4442
+      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+      #- SE_NODE_MAX_SESSION=2
+    ports:
+      - "5900"
+      - "7900"
+
+#  edge:
+#    image: selenium/node-edge:4.8.0-20230210
+#    shm_size: 2gb
+#    depends_on:
+#      - selenium-hub
+#    environment:
+#      - SE_EVENT_BUS_HOST=selenium-hub
+#      - SE_EVENT_BUS_PUBLISH_PORT=4442
+#      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+#    ports:
+#      - "5900"
+#      - "7900"
+

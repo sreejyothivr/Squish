@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SquishReport version="3.5" xmlns="http://www.froglogic.com/resources/schemas/xml3" executedBy="Qburst">
+    <test type="testcase">
+        <prolog time="2023-03-14T15:51:15.040+05:30">
+            <name><![CDATA[tst_case3]]></name>
+            <location>
+                <uri><![CDATA[x-testsuite:/tst_case3]]></uri>
+            </location>
+        </prolog>
+        <verification>
+            <location>
+                <uri><![CDATA[x-testcase:/test.js]]></uri>
+                <lineNo><![CDATA[9]]></lineNo>
+            </location>
+            <screenshotVerificationResult type="PASS" time="2023-03-14T15:51:18.707+05:30">
+                <objectLocation>
+                    <uri><![CDATA[x-testcase:/verificationPoints/VP1]]></uri>
+                    <objectName><![CDATA[javaSwingCalculator30JLabel]]></objectName>
+                </objectLocation>
+                <text><![CDATA[VP1: Screenshot comparison of 'javaSwingCalculator30JLabel' passed]]></text>
+                <detail><![CDATA[Screenshots are considered identical]]></detail>
+            </screenshotVerificationResult>
+        </verification>
+        <epilog time="2023-03-14T15:51:19.725+05:30"/>
+    </test>
+</SquishReport>

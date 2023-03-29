@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objectdump wrapper="iOS">
+
+    <element type="*">
+        <screenshot exclude="yes"/>
+        <screenshotIfRoot exclude="no"/>
+        <transparentNodes exclude="yes"/>
+        <realname exclude="yes"/>
+        <symbolicname exclude="yes"/>
+
+        <identifyingProperties>
+            <property name="tag"/>
+            <property name="accessibilityIdentifier"/>
+            <property name="accessibilityLabel"/>
+        </identifyingProperties>
+        <properties>
+            <property name="*"/>
+        </properties>
+    </element>
+
+    <element type="UIView">
+        <properties>
+            <property name="_countOfMotionEffectsInSubtree" exclude="yes"/>
+            <property name="_countOfFocusedAncestorTrackingViewsInSubtree" exclude="yes"/>
+            <property name="charge" exclude="yes"/>
+            <property name="deliversTouchesForGesturesToSuperview" exclude="yes"/>
+            <property name="deliversButtonsForGesturesToSuperview" exclude="yes"/>
+            <property name="enabledGestures" exclude="yes"/>
+            <property name="gesturesEnabled" exclude="yes"/>
+            <property name="skipsSubviewEnumeration" exclude="yes"/>
+            <property name="viewTraversalMark" exclude="yes"/>
+        </properties>
+    </element>
+
+</objectdump>

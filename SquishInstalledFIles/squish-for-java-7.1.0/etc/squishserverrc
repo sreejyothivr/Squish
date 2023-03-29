@@ -1,0 +1,12 @@
+# This file can specify the IP addresses from which connections are
+# allowed using a line of the form ALLOWED_HOSTS=ip-address1 ip-address2 ...
+# Use * to allow access to a range of IP number
+#
+# Example allowing 192.168.1.10 access to this squishserver
+# ALLOWED_HOSTS=192.168.1.10
+#
+# Example allowing all from 192.168.1.0 network to access
+# ALLOWED_HOSTS=192.168.1.*
+#
+# Example allow every IP to access
+ALLOWED_HOSTS=*

@@ -1,0 +1,5 @@
+#!/bin/sh
+squish_bindir=$(cd "$(dirname "$0")" && pwd)
+testcenter_bindir=$(cd "$squish_bindir/../testcenter/bin" && pwd)
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$squish_bindir/../lib
+exec "$testcenter_bindir/$(basename "$0")" "$@"

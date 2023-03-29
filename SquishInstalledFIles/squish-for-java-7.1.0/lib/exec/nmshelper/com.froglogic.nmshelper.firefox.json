@@ -1,0 +1,7 @@
+{
+  "name": "com.froglogic.nmshelper.firefox",
+  "description": "Squish Web Assembly Hook Helper",
+  "path": "__NMS_HELPER_PATH__/nmshelper",
+  "type": "stdio",
+  "allowed_extensions": [ "squishWebExt@froglogic.com" ]
+}
